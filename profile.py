@@ -9,12 +9,14 @@ class Profile:
         self.age = age
         self.sex = sex
 
-    def __str__(self):
-        return (f"Name: {self.name}\n"
-                f"Last Name: {self.last_name}\n"
-                f"Phone Number: {self.phone_number}\n"
-                f"Address: {self.address}\n"
-                f"Email: {self.email}\n"
-                f"Birthday: {self.birthday}\n"
-                f"Age: {self.age}\n"
-                f"Sex: {self.sex}")
+    def get_attributes(self):
+        return [
+            self.name,
+            self.last_name,
+            self.phone_number,
+            self.address,
+            self.email,
+            self.birthday,
+            self.age,
+            self.sex
+        ]

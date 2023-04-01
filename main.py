@@ -27,15 +27,18 @@ if __name__ == "__main__":
     centaur.work()
     centaur.meow()
 
-    profile = Profile(name="Volodya",
-                      last_name="Kozariz",
-                      phone_number="+380679803550",
-                      address="Some address",
-                      email="dovakin746@gmail.com",
-                      birthday="04.08.04",
-                      age="18",
-                      sex="M")
-    print(profile)
+    profile = Profile(
+        name="Volodya",
+        last_name="Kozariz",
+        phone_number="+380679803550",
+        address="Some address",
+        email="dovakin746@gmail.com",
+        birthday="04.08.04",
+        age="18",
+        sex="M"
+    )
+
+    print(profile.get_attributes())
 
     laptop = HPLaptop()
     laptop.screen()
